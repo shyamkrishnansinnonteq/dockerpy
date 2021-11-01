@@ -8,7 +8,9 @@ pipeline {
     }
     stage('Docker version') {
       steps {
-        sh "docker --version"
+        script {
+          sh 'docker build -t shyamkrishnansinnonteq/dockerpy_helloworld'
+        }
       }
     }
 
