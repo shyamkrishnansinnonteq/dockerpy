@@ -7,7 +7,7 @@ pipeline {
       }
     }
     stage('Docker version') {
-      step {
+      steps {
         echo "docker check"
       }
     }
